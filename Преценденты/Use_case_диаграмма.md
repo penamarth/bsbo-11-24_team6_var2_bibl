@@ -1,6 +1,6 @@
 
 
-!\[usecase](https://raw.githubusercontent.com/penamarth/bsbo-11-24\_team6\_var2\_bibl/main/images/usecase.png)
+![usecase](../images/usecase.png)
 
 
 
@@ -39,16 +39,10 @@ rectangle "Информационная система библиотеки" {
 }
 
 
-
-' Связи Мученика
-
 Mychennik --> UC\_Search
 
 Mychennik --> UC\_Reserve
 
-
-
-' Связи Библиотекаря
 
 Librarian --> UC\_Search
 
@@ -56,9 +50,6 @@ Librarian --> UC\_Issue
 
 Librarian --> UC\_Return
 
-
-
-' Связи Администратора
 
 Admin --> UC\_Manage
 
