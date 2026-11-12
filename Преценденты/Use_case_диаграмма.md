@@ -39,16 +39,10 @@ rectangle "Информационная система библиотеки" {
 }
 
 
-
-' Связи Мученика
-
 Mychennik --> UC\_Search
 
 Mychennik --> UC\_Reserve
 
-
-
-' Связи Библиотекаря
 
 Librarian --> UC\_Search
 
@@ -56,9 +50,6 @@ Librarian --> UC\_Issue
 
 Librarian --> UC\_Return
 
-
-
-' Связи Администратора
 
 Admin --> UC\_Manage
 
