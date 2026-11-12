@@ -1,8 +1,6 @@
 
 
-!\[usecase](../images/usecase.png)
-
-
+!\[usecase](https://raw.githubusercontent.com/penamarth/bsbo-11-24\_team6\_var2\_bibl/main/images/usecase.png)
 
 
 
