@@ -7,11 +7,16 @@ title Бронирование книги
 actor "Мученик" as MychennikUser
 participant "ABC Library System" as Facade
 database "Mychennik Storage" as MychennikStore
+database "Catalog Storage" as CatalogStore
 database "Circulation Storage" as CircStore
 
 MychennikUser -> Facade : searchBooks(title, author)
 activate Facade
-Facade -> Facade : searchBooks()
+Facade -> CatalogStore : searchBooks(title, author)
+activate CatalogStore
+CatalogStore -> CatalogStore : searchBooks()
+CatalogStore --> Facade : books
+deactivate CatalogStore
 Facade -> MychennikUser : showResults()
 deactivate Facade
 
@@ -34,5 +39,6 @@ else Мученик найден
     Facade -> MychennikUser : showReservationDetails()
 end
 deactivate Facade
+
 @enduml
 ```
