@@ -1,4 +1,4 @@
-!\[return](../../images/return.png)
+![return](../../images/return.png)
 
 
 
